@@ -119,8 +119,22 @@ time docker build -t lbarosi/cosmos:v1 .
 
 ### Running the container and further installs
 
+First we need to fix some permissions:
+
+1. Linux
+We created the user `cosmos` in the docker image with group id `1001`. In your host machine, add your user to this group:
+
 ````bash
-docker run -p 8888:8888 -v /absolutepathTobingo-hackaton/:/home/cosmos/code -ti lbarosi/cosmos:v1 /bin/bash
+adduser username 1000
+````
+Change the permission of the folder you will share (the place where you cloned git repo into)
+````bash
+chown :1000 /BINGO-Hackaton
+chmod 775 /BINGO-Hackaton
+chmod g+s /BINGO-Hackaton
+````
+````bash
+docker run -p 8888:8888 -v ~/bingo-hackaton/:/home/cosmos/code lbarosi/cosmos:v1
 ````
 
 #### Checking What we have so far

@@ -113,12 +113,11 @@ RUN /bin/bash /tmp/installCLASS.sh
 #################################################################
 # # Installing MontePython
 WORKDIR /home/cosmos
-RUN /bin/bash /tmp/installMontePython.sh
+RUN /bin/bash /tmp/installMontepython.sh
 
 #Sourcing bashrc
 WORKDIR /home/cosmos
 RUN cp /tmp/bashrc /home/cosmos/.bashrc && \
-     /bin/bash -c “source .bashrc” && \
      rm -f /tmp/*
 #################################################################
 #Preparing smooth jupyter run
