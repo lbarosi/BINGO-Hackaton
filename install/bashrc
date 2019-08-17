@@ -1,0 +1,10 @@
+#!/bin/bash
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PYTHONPATH=/home/cosmos/CosmoMC/python/:$PYTHONPATH
+export LD_LIBRARY_PATH=/opt/cfitsio/lib/:$LD_LIBRARY_PATH
+export PATH=/opt/conda/envs/cosmos3/bin/:$PATH
+export PATH=/home/cosmos/MontePython/montepython/:$PATH
+source activate cosmos3
+source /home/cosmos/planck_2018/code/plc_3.0/plc-3.01/bin/clik_profile.sh
+export PATH=/usr/bin:/usr/local/bin/:/opt/conda/bin/:$PATH

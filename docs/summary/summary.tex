@@ -1,0 +1,103 @@
+\documentclass[a4paper, 11pt]{hitec}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{hyphenat}
+\usepackage{aas_macros}
+\usepackage{xcolor}
+\usepackage{graphicx} % Required for including pictures
+\usepackage[portuguese]{babel} % English language/hyphenation
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{amsmath,amsfonts,amssymb,amsthm} 
+\usepackage{wasysym}
+\usepackage{indentfirst}
+\usepackage[font=scriptsize,skip=-5pt, width = 0.8\linewidth]{caption}
+\usepackage[backend = biber, style=numeric]{biblatex}
+\addbibresource{cosmos.bib}
+
+\author{Luciano Barosi}
+\title{Coding for Precision Cosmology}
+\company{UAF/CCT/UFCG \\ @BINGO Collaboration}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+A pesquisa em cosmologia no s�c. XXI � uma cosmologia baseada em uma grande quantidade de dados dispon�veis e sua manipula��o por c�digos dedicados. O objetivo deste curso � promover uma experi�ncia \emph{hands on} para a obten��o e an�lise dos dados cosmol�gicos dispon�veis utilizando principalmente \textbf{python} e sua interface com os pacotes bem estabelecidos.
+\end{abstract}
+
+\section{Objetivos}
+
+\subsection{Objetivos Gerais}
+
+Permitir ao aluno uma compreens�o geral das principais ferramentas utilizadas na pesquisa em cosmologia observacional.
+
+\subsection{Objetivos Espec�ficos}
+
+\begin{itemize}
+	\item Indicar ferramentas de gerenciamento de sistemas
+	\item Mostrar onde � poss�vel obter ajuda para desenvolvimento e utiliza��o de c�digos.
+	\item Apresentar as principais bibliotecas Python: Numpy, Matplotlib, SciPy e Pandas
+	\item Apresentar um panorama resumido de f�sica de CMB
+	\item Apresentar c�digos Boltzmann
+	\item Apresentar c�digos de amostragem MonteCarlo
+	\item Apresentar elementos de machine learning
+	\item Apresentar mapmaking e pipelines para o tratamento de dados de radiotelesc�pios.
+\end{itemize}
+
+\section{Conte�do Program�tico}
+
+\begin{enumerate}
+	\item Ferramentas �teis: Git, Docker, Bash, Markdown, \LaTeX, Jupyter. Instalando o sistema de maneira agn�stica. 
+	\item Conceitos b�sicos de python: filosofia, PEP8 \cite{PEP8}, fun��es, classes, m�dulos.
+	\item Principais bibliotecas python: NUMPY \cite{numpy}, MATPLOTLIB \cite{matplotlib}, PANDAS \cite{pandas}, SCIPY \cite{scipy}, ASTROPY \cite{astropy:2018}.
+	\item Dados cosmol�gicos dispon�veis, WMAP \cite{wmap}, PLANCK \cite{planck}, LIGO \cite{ligo}, SDSS \cite{sdss}, JLA \cite{jla}. 
+	\item Healpy \cite{healpy}.
+	\item Boltzmann codes: CAMB \cite{camb}
+	\item Boltzmann codes: CLASS \cite{class}
+	\item Boltzmann codes: COSMOSIS \cite{cosmosis}
+	\item M�todos de Montecarlo: COSMOMC \cite{cosmomc}, MontePython \cite{montepython}, Multinest. GetDist
+	\item Simula��o de dados cosmol�gicos: MapMaking, efeitos atmosf�ricos, shot noise.
+	\item An�lise de S�ries Temporais (TOD): FFT, DFFT, efeitos de sampling.
+	\item Elementos de Machine Learning para Cosmologia \cite{astroML}.
+\end{enumerate}
+
+\section{Metodologia}
+
+As apresenta��es envolvem o conte�do te�rico m�nimo necess�rio para a utiliza��o dos c�digos e o entendimento das opera��es, com a indica��o clara da literatura necess�ria para o aprofundamento.
+
+Todas as aulas s�o realizadas com c�digos ao vivo, em modelo \emph{hands on}, no qual os alunos tem oportunidade de rodas os c�digos em notebooks jupyter e tirar d�vidas e realizar pequenas modifica��es.
+
+O curso � ministrado em uma semana corrida, 4h por dia, com intervalo de uma semana, durante tr�s semanas. Ao final de cada semana de aula os alunos recebem uma tarefa que devem apresentar na pr�xima semana de aula, motivo pelo qual � fundamental que eles tenham de fato uma semana livre logo em seguida para poderem se dedicar as atividades.
+
+\subsection{Recursos Computacionais}
+
+� fundamental que o aluno tenha um computador a disposi��o para realizar as atividades, durante as aulas. As aulas podem ser realizadas em laborat�rio de inform�tica ou os alunos podem utilizar seus pr�prios dispositivos.
+
+Os requisitos de sistema s�o: Um computador com qualquer sistema operacional, processador de pelo menos 4 n�cleos, m�nimo de 4Gb de mem�ria RAM e 15Gb de espa�o dispon�vel.
+
+Para a utiliza��o de laborat�rios de inform�tica, o usu�rio deve ter permiss�o para cria��o de uma imagem Docker.
+
+� necess�rio acesso a internet.
+
+\section{Avalia��o}
+
+Cada aluno recer� tr�s notas. A m�dia final corresponde a m�dia aritm�tica das notas.
+
+\begin{enumerate}
+	\item Frequ�ncia nas aulas (normalizada entre 0 - 10)
+	\item tarefa da primeira semana
+	\item tarefa da segunda semana
+\end{enumerate}
+
+Todas as tarefas devem ser entregues como um m�dulo em python e como um notebook jupyter que rode o m�dulo com explica��es. O m�dulo deve rodar tamb�m standalone. As tarefas devem estar dispon�veis no bitbucket segundo as boas pr�ticas de cria��o de m�dulo PEP8.
+
+As tarefas devem ser apresentadas em sala de aula.
+
+%\bibliographystyle{plain}
+
+%\bibliography{cosmos}
+\printbibliography
+
+\end{document}
