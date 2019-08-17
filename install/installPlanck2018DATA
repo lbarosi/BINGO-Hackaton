@@ -1,0 +1,7 @@
+
+# #Installing Planck Data
+ADD  http://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz /home/cosmos/planck_2018
+RUN  cd /home/cosmos/planck_2018 && \
+      sudo chown -R cosmos:cosmos * && \
+      tar zxvf product-action && \
+      rm product-action

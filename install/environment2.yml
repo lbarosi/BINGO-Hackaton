@@ -1,0 +1,10 @@
+name: cosmos2
+channels:
+  - astropy
+  - conda-forge
+  - defaults
+dependencies:
+     - numpy
+     - scipy
+     - cython
+     - ipykernel
