@@ -239,3 +239,6 @@ venv.bak/
 
 
 # End of https://www.gitignore.io/api/latex,python
+# Personal
+Software/
+make_env

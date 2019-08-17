@@ -28,7 +28,8 @@ ENV SHELL=/bin/bash \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8
 # Add user sudoer
-RUN  adduser --disabled-password  --gecos '' -u 1001  cosmos && \
+RUN  addgroup --gid 1000 cosmos && \
+     adduser --disabled-password  --gecos '' --uid 1000 --ingroup cosmos cosmos && \
      adduser cosmos sudo && \
      echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 #################################################################
@@ -118,6 +119,7 @@ RUN /bin/bash /tmp/installMontepython.sh
 #Sourcing bashrc
 WORKDIR /home/cosmos
 RUN cp /tmp/bashrc /home/cosmos/.bashrc && \
+     mkdir /home/cosmos/code/ && \
      rm -f /tmp/*
 #################################################################
 #Preparing smooth jupyter run
