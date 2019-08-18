@@ -14,7 +14,8 @@ This system provides:
 - Cobaya
 - CosmoHammer
 
-You should start learning [here](lessonsTOC.ipinb):  
+You should start learning [here](lessonsTOC.ipinb).
+
 
 ## I am in a hurry:
 

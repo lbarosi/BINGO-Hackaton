@@ -15,7 +15,7 @@ IMAGE := $(ACCOUNT)/$(SERVICE)
 
 build:
 	$(info Make: Building "$(TAG)" tagged images.)
-	@docker build -t $(IMAGE):$(TAG) -f Dockerfile .
+	@docker build -t $(IMAGE):$(TAG) -f $(DOCKERFILE) .
 
 
 tag:
