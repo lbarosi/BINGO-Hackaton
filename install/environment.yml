@@ -203,7 +203,6 @@ dependencies:
   - zstd=1.4.0=h3b9ef0a_0
   - future
   - pip:
-    - pymultinest==2.7
     - cobaya
     - camb
     - cosmohammer

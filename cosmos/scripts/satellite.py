@@ -3,9 +3,12 @@ pylab.rcParams['figure.figsize'] = 7, 7
 
 from skyfield import api
 from pytz import timezone
-brasil = timezone('BRT')
+import numpy as np
+import matplotlib.pyplot as plt
+brasil = timezone('America/Recife')
 
 GPSsats = api.load.tle('https://celestrak.com/NORAD/elements/gps-ops.txt')
+exemplo = GPSsats["GPS BIIA-23 (PRN 18)"]
 GLOsats = api.load.tle('https://celestrak.com/NORAD/elements/glo-ops.txt')
 GALILEOsats = api.load.tle('https://celestrak.com/NORAD/elements/galileo.txt')
 BEIDOUsats = api.load.tle('https://celestrak.com/NORAD/elements/beidou.txt')
@@ -17,7 +20,7 @@ ts = api.load.timescale()
 t = ts.utc(2019,9,1,0,minutes)
 print(t)
 
-orbit = (GPSsats - BINGO).at(t)
+orbit = (exemplo - BINGO).at(t)
 alt, az, distance = orbit.altaz()
 
 above_horizon = alt.degrees > 0
@@ -26,7 +29,7 @@ print(above_horizon)
 indicies, = above_horizon.nonzero()
 print(indicies)
 
-boundaries, = diff(above_horizon).nonzero()
+boundaries, = np.diff(above_horizon).nonzero()
 print(boundaries)
 
 passes = boundaries.reshape(len(boundaries) // 2, 2)

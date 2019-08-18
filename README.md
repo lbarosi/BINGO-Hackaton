@@ -126,14 +126,14 @@ git checkout
 cd bingo-Hackaton
 time docker build -t lbarosi/cosmos:v1 .
 ````
-**real    14m22,561ss**
+**real    45m22,561ss**
 
 
 ### Running the container and further installs
 
 
 ````bash
-docker run --rm --mount type=bind,source=$(SOURCE),target=$(TARGET) $(IMAGE):$(TAG) 
+docker run --rm --mount type=bind,source=$(SOURCE),target=$(TARGET) $(IMAGE):$(TAG)
 ````
 
 

@@ -16,8 +16,7 @@ IMAGE := $(ACCOUNT)/$(SERVICE)
 build:
 	$(info Make: Building "$(TAG)" tagged images.)
 	@docker build -t $(IMAGE):$(TAG) -f Dockerfile .
-	@make -s tag
-	@make -s clean
+	
 
 tag:
 	$(info Make: Tagging image with "$(TAG)".)
@@ -25,7 +24,7 @@ tag:
 
 jupyter:
 	$(info Make: Starting "$(TAG)" tagged container.)
-	@docker run --rm --mount type=bind,source=$(SOURCE),target=$(TARGET) $(IMAGE):$(TAG)
+	@docker run -p 8888:8888 --rm --mount type=bind,source=$(SOURCE),target=$(TARGET) $(IMAGE):$(TAG)
 
 bash:
 	$(info Make: Starting "$(TAG)" tagged container.)
