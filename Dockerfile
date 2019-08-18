@@ -74,7 +74,7 @@ RUN conda env create -f /tmp/environment2.yml
 #################################################################
 # CFITSIO
 # Installing CFITSIO system wide
-ADD http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.47.tar.gz /tmp
+#ADD http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.47.tar.gz /tmp
 WORKDIR /tmp
 RUN  sudo chown -R cosmos:cosmos /tmp/ && \
      /bin/bash /tmp/installCFITSIO.sh
