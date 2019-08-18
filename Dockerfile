@@ -103,10 +103,12 @@ RUN /bin/bash /tmp/installCosmoMC.sh
 WORKDIR /home/cosmos
 RUN /bin/bash /tmp/installcosmosis.sh
 #################################################################
-# # Installing COBAYA
-WORKDIR /home/cosmos
-RUN mkdir cobaya && \
-     cobaya-install cosmo -m /home/cosmos/cobaya
+# # Installing COBAYA: fails because of heasarc.nasa.gov
+#WORKDIR /home/cosmos
+#ENV LD_LIBRARY_PATH="/opt/cfitsio/lib/:${LD_LIBRARY_PATH}"
+#ENV cfitsio_prefix = "/opt/cfitsio"
+#RUN mkdir cobaya && \
+#     cobaya-install cosmo -m /home/cosmos/cobaya
 #################################################################
 # # Installing CLASS
 WORKDIR /home/cosmos
