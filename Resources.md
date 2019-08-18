@@ -1,5 +1,10 @@
 # Resources
 
+http://python4astronomers.github.io/
+
+http://scipy-lectures.org/
+
+http://python4mpia.github.io/
 
 
 #### astroml
