@@ -1,10 +1,17 @@
 # Resources
+https://github.com/rougier/numpy-100
 
 http://python4astronomers.github.io/
 
 http://scipy-lectures.org/
 
 http://python4mpia.github.io/
+
+
+How to add a border (filled with 0's) around an existing array?
+Z = np.ones((5,5))
+Z = np.pad(Z, pad_width=1, mode='constant', constant_values=0)
+print(Z)
 
 
 #### astroml

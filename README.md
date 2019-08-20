@@ -127,8 +127,14 @@ git checkout
 cd bingo-Hackaton
 time docker build -t lbarosi/cosmos:v1 .
 ````
-**real    45m22,561ss**
+or
 
+````bash
+make build
+````
+
+**real    45m22,561ss**
+<img src="./IMAGES/coffee.webp" width="250">
 
 ### Running the container and further installs
 
@@ -136,8 +142,10 @@ time docker build -t lbarosi/cosmos:v1 .
 ````bash
 docker run --rm --mount type=bind,source=$(SOURCE),target=$(TARGET) $(IMAGE):$(TAG)
 ````
-
-
+or
+````bash
+make run-jupyter
+````
 
 
 #### Checking What we have so far
