@@ -15,7 +15,7 @@ This system provides:
 - CosmoHammer
 
 You should start learning [here](lessonsTOC.ipinb).
-
+You may run the python part of the course in binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lbarosi/BINGO-Hackaton/master)
 
 ## I am in a hurry:
 
