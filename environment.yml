@@ -171,6 +171,7 @@ dependencies:
   - sphinxcontrib-qthelp=1.0.2=py_0
   - sphinxcontrib-serializinghtml=1.1.1=py_0
   - sqlite=3.29.0=hcee41ef_0
+  - statsmodels
   - terminado=0.8.2=py37_0
   - testpath=0.4.2=py_1001
   - tk=8.6.9=hed695b0_1002

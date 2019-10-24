@@ -76,3 +76,12 @@ ds = pd.read_csv(io.StringIO(s.decode('utf-8')))
 
 ds.describe()
 ds.head(5)
+
+
+https://hub.gke.mybinder.org/user/elegant-scipy-notebooks-l9d71pdm/notebooks/notebooks/ch4.ipynb
+https://hub.gke.mybinder.org/user/elegant-scipy-notebooks-l9d71pdm/notebooks/notebooks/ch3.ipynb
+https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch04.html
+https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch04.html#discrete-fourier-transforms-sidebar
+
+
+http://wvurail.org/dspira/labs/05/I_Q_quadrature_sampling.html

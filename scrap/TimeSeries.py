@@ -21,12 +21,17 @@ colnames = ['YEAR', 'MONTH', 'YM', 'ACTIVITY', 'C1', 'C2', 'C3']
 df = pd.read_table(io.StringIO(s.decode('utf-8')), names = colnames, header = None, delim_whitespace=True )
 df.head(5)
 
+df.shape
+df.
+
 df['DAY']=1
 df = df[['YEAR', 'MONTH', 'DAY', 'ACTIVITY']]
 df.index = pd.to_datetime(df[['YEAR','MONTH','DAY']])
 df = df[['ACTIVITY']]
 df.head(5)
-
+df.info()
+df.describe()
+pd.to_datetime(df[['YEAR','MONTH','DAY']])
 # You can select by datetime with partial match
 df.loc['1830']
 #############
