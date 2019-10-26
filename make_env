@@ -1,4 +1,4 @@
-TAG := "v1"
+TAG := "complete"
 SOURCE := "/home/lbarosi/bingo-hackaton/"
 TARGET := "/home/cosmos/code/"
 PORTS := "8888:8888"

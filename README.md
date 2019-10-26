@@ -80,7 +80,7 @@ There are several GIT repositories:
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 sudo apt update
 sudo apt install docker-ce
 ````
@@ -117,15 +117,15 @@ https://hub.docker.com/?overlay=onboarding
 ### Cloning the repo
 
 ````bash
-git clone https://lbarosi@bitbucket.org/lbarosi/bingo-hackaton.git
-cd bingo-Hackaton
+git clone https://github.com/lbarosi/BINGO-Hackaton.git
+cd BINGO-Hackaton
 git checkout
 ````
 
 ### Making the container
 ````bash
 cd bingo-Hackaton
-time docker build -t lbarosi/cosmos:v1 .
+docker build -t lbarosi/cosmos:complete -f Dockerfile-cosmos .
 ````
 or
 
@@ -144,7 +144,7 @@ docker run --rm --mount type=bind,source=$(SOURCE),target=$(TARGET) $(IMAGE):$(T
 ````
 or
 ````bash
-make run-jupyter
+make run-jupyter TAG=complete
 ````
 
 

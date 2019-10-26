@@ -2,13 +2,7 @@ include ./make_env
 ifndef TAG
 $(error The TAG variable is missing.)
 endif
-#TAG := v1
-#SOURCE := /home/lbarosi/cosmos/
-#TARGET := /home/cosmos/code/
-#PORTS := 8888:8888
-#FILTER := "until 24h"
-#ACCOUNT := lbarosi
-#SERVICE := cosmos
+
 
 IMAGE := $(ACCOUNT)/$(SERVICE)
 
