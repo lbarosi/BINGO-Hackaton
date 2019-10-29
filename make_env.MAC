@@ -1,5 +1,5 @@
-TAG := "v1"
-SOURCE := "/Volumes/BarosiMACOS/Dropbox/workspace/BINGO-PB/Projetos/BINGO-Hackaton/"
+TAG := "complete"
+SOURCE := "/home/lbarosi/BINGO-Hackaton/"
 TARGET := "/home/cosmos/code/"
 PORTS := "8888:8888"
 FILTER := "until 24h"
