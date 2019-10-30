@@ -27,7 +27,7 @@ run-bash:
 stop:
 	$(info Make: Stopping "$(TAG)" tagged container.)
 	@docker stop $(SERVICE)
-	@docker rm $(SERVICE)
+#	@docker rm $(SERVICE)
 
 clean:
 	@docker system prune --volumes --force
