@@ -242,4 +242,5 @@ venv.bak/
 # Personal
 Software/
 scrap/
+DATA/
 make_env
