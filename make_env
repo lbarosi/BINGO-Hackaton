@@ -1,5 +1,5 @@
 TAG := "complete"
-SOURCE := "/home/lbarosi/bingo-hackaton/"
+SOURCE := "/home/lbarosi/Pythonia/BINGO-Hackaton/"
 TARGET := "/home/cosmos/code/"
 PORTS := "8888:8888"
 FILTER := "until 24h"
